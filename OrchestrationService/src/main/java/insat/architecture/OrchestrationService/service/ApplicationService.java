@@ -15,7 +15,7 @@ import java.util.List;
 public class ApplicationService {
   @Autowired
   ApplicationRepository applicationRepository;
-  private String directory ="/home/haythemkaouech/Desktop/Work/architecture/documents";
+  private String directory ="/home/haythemkaouech/Desktop/Work/architecture/FileDatabase";
   public List<Application>getApps(){
     return this.applicationRepository.findAll();
   }
