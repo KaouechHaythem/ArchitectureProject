@@ -19,7 +19,7 @@ public class ApplicationService {
   public List<Application>getApps(){
     return this.applicationRepository.findAll();
   }
-  public void saveApp(String id , String firstName , String lastName, String address, String postalCode, MultipartFile cin,MultipartFile proof , MultipartFile report) throws IOException {
+  public Application saveApp(String id , String firstName , String lastName, String address, String postalCode, MultipartFile cin,MultipartFile proof , MultipartFile report) throws IOException {
     Path uploadPath = Paths.get(directory);
 
 
@@ -33,6 +33,7 @@ public class ApplicationService {
       report.transferTo(reportPath);
       Application newApp= new Application(id,firstName,lastName,address,postalCode,cinPath.toString(),proofPath.toString(),reportPath.toString());
       this.applicationRepository.save(newApp);
+      return newApp;
     } catch (IOException e) {
       throw new IOException("Could not save file: "  );
     }

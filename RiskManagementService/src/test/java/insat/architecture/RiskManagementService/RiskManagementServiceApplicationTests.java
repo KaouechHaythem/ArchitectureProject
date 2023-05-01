@@ -1,10 +1,10 @@
-package insat.architecture.OrchestrationService;
+package insat.architecture.RiskManagementService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CommercialServiceApplicationTests {
+class RiskManagementServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
