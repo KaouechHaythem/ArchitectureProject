@@ -2,6 +2,13 @@
 ### developped by :  KAOUECH HAYTHEM , HELLAL MOOTAZ , SAMET RAYEN
 ### ARCHITECTURE : 
 ![architecture](architecture.png)
+## General Explanation : 
+The client fills out the loan form through the interface, which sends the data to the orchestration service. <br>
+The orchestration service saves the application files to the file system database and the path to these files, along with form information, in the company's database. <br> 
+The commercial service processes the application and sends a score to the orchestration service. <br>
+The orchestration service then sends the application to the risk management service, which communicates with the central bank database through an API and returns a final score. <br>
+The commercial and risk management services both use the OCR service through the orchestration service. <br>
+Finally, the notification manager listens for any changes and notifies the user.
 ## Interface : <br> 
 Angular is a popular front-end web development framework that has been widely adopted in the industry. I chose to use Angular for this project because of its robust features, scalability, and ease of use. Angular provides powerful tools for building dynamic and responsive user interfaces, including advanced data binding, component-based architecture, and built-in support for HTTP requests. Additionally, Angular has a large and active community that provides a wealth of resources and support, making it easier to develop and maintain the project in the long run. Overall, Angular provides a solid foundation for building a modern, intuitive, and engaging user interface for this loan management system.
 
