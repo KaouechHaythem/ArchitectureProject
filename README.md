@@ -1,6 +1,7 @@
 # Architecture Project
 ### developped by :  KAOUECH HAYTHEM , HELLAL MOOTAZ , SAMET RAYEN
-you can find the architecture graph inside ArchitectureTP4.pdf 
+### ARCHITECTURE : 
+![architecture](architecture.png)
 ## Interface : <br> 
 Angular is a popular front-end web development framework that has been widely adopted in the industry. I chose to use Angular for this project because of its robust features, scalability, and ease of use. Angular provides powerful tools for building dynamic and responsive user interfaces, including advanced data binding, component-based architecture, and built-in support for HTTP requests. Additionally, Angular has a large and active community that provides a wealth of resources and support, making it easier to develop and maintain the project in the long run. Overall, Angular provides a solid foundation for building a modern, intuitive, and engaging user interface for this loan management system.
 
